@@ -1,0 +1,45 @@
+﻿<Window x:Class="Base64Convertor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Base64Convertor"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        HorizontalContentAlignment="Center"
+        Title="Base64 Convertor"
+        Height="450"
+        Background="Transparent"
+        Width="800"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" 
+        Foreground="Transparent"
+        WindowStyle="None">
+
+    <Window.Resources>
+
+        
+
+    </Window.Resources>
+
+    <Grid>
+
+        <!--#region Top Panel Implements -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="Transparent" PreviewMouseDown="Drag_OnPreviewMouseDown" Grid.Row="0">
+            <Border CornerRadius="5 5 0 0" Background="Black"></Border>
+            <TextBlock FontSize="20" FontFamily="Segoe WP Light" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Text="Base64 Convertor"></TextBlock>
+            <materialDesign:PackIcon PreviewMouseDown="Close_OnPreviewMouseDown"  HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Center" Width="25" Height="25" Kind="CloseCircle" Margin="0,0,5,0"/>
+            <materialDesign:PackIcon PreviewMouseDown="Minimize_OnPreviewMouseDown" HorizontalAlignment="Right" Foreground="White" VerticalAlignment="Center" Width="25" Height="25" Kind="MinusCircle" Margin="0,0,35,0"/>
+        </Grid>
+        <!--#endregion-->
+
+        <Grid x:Name="MainContentContainer" Loaded="MainWindowLoaded"  Grid.Row="1">
+            
+        </Grid>
+    </Grid>
+</Window>
