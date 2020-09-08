@@ -13,6 +13,8 @@
 - And you can put your Encoded text in left box and the result will appear in right box and you can copy the result by click on "Decode" icon
 <img src="https://i.ibb.co/nQHvPw7/left.png" width="600"/>
 
+- Also there is a little helper when you run the program for the first time
+
 ## Supported Encoding Types
 
 > See Here : <a href="https://ghostbin.co/paste/kox5f">Enc<a/>
